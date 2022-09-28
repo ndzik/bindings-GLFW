@@ -125,13 +125,14 @@ library
       glfw/src/context.c
       glfw/src/egl_context.c
       glfw/src/init.c
+      glfw/src/platform.c
       glfw/src/input.c
       glfw/src/monitor.c
       glfw/src/osmesa_context.c
       glfw/src/vulkan.c
       glfw/src/window.c
-      glfw/deps/glad_gl.c
-      glfw/deps/glad_vulkan.c
+      -- glfw/deps/glad_gl.c
+      -- glfw/deps/glad_vulkan.c
 
     if os(linux) || os(freebsd)
       c-sources:
@@ -169,6 +170,7 @@ library
         Xcursor
         Xinerama
         pthread
+        glfw3
 
     if os(darwin)
       c-sources:
